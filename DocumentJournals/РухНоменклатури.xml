@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
+	<DocumentJournal uuid="abddd211-ceb9-4ef9-a0df-3c87a23b3367">
+		<InternalInfo>
+			<xr:GeneratedType name="DocumentJournalSelection.РухНоменклатури" category="Selection">
+				<xr:TypeId>9e4f6af1-e486-40c7-97c7-9b916a59cfe7</xr:TypeId>
+				<xr:ValueId>9ffb16ec-5209-4bc7-b2d8-5a60b7c64334</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentJournalList.РухНоменклатури" category="List">
+				<xr:TypeId>082e1969-b0b5-4f32-ac09-2d7f324e46be</xr:TypeId>
+				<xr:ValueId>820a5062-515b-45bf-9189-c57db02fe350</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentJournalManager.РухНоменклатури" category="Manager">
+				<xr:TypeId>97fe639d-8dda-4301-ad45-4371b130fa5a</xr:TypeId>
+				<xr:ValueId>b508e9f8-d462-4d19-ac1c-e3ed2152f6f5</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>РухНоменклатури</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Рух номенклатури</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<DefaultForm/>
+			<AuxiliaryForm/>
+			<UseStandardCommands>true</UseStandardCommands>
+			<RegisteredDocuments>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.НадходженняТоварівПослуг</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ПродажТоварівПослугПродукції</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ПереміщенняНоменклатури</xr:Item>
+			</RegisteredDocuments>
+			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<ListPresentation/>
+			<ExtendedListPresentation/>
+			<Explanation/>
+		</Properties>
+		<ChildObjects/>
+	</DocumentJournal>
+</MetaDataObject>

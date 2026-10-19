@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
+	<DocumentJournal uuid="a9ba801d-3d78-4da7-ba2d-bd7b66266cff">
+		<InternalInfo>
+			<xr:GeneratedType name="DocumentJournalSelection.РухМШП" category="Selection">
+				<xr:TypeId>2fab96bd-0a11-47ff-8099-c6b873b136cf</xr:TypeId>
+				<xr:ValueId>baa01e77-6823-4bd4-9e47-1b5b8f17b35c</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentJournalList.РухМШП" category="List">
+				<xr:TypeId>445329a5-d587-42d0-a7e9-9eb25d8ac14e</xr:TypeId>
+				<xr:ValueId>c51452f7-a1f2-455a-9c31-b7e5b11d3988</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentJournalManager.РухМШП" category="Manager">
+				<xr:TypeId>20b0643d-21c9-45c6-8d3d-7cd89429bddf</xr:TypeId>
+				<xr:ValueId>d62c02d5-58c9-45bb-b863-56091a711655</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>РухМШП</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Рух МШП</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<DefaultForm/>
+			<AuxiliaryForm/>
+			<UseStandardCommands>true</UseStandardCommands>
+			<RegisteredDocuments>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.НадходженняТоварівПослуг</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ПередачаМШПВЕксплуатацію</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.СписанняМШП</xr:Item>
+			</RegisteredDocuments>
+			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<ListPresentation/>
+			<ExtendedListPresentation/>
+			<Explanation/>
+		</Properties>
+		<ChildObjects/>
+	</DocumentJournal>
+</MetaDataObject>
