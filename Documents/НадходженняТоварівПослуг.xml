@@ -49,8 +49,8 @@
 			<SearchStringModeOnInputByString>Begin</SearchStringModeOnInputByString>
 			<FullTextSearchOnInputByString>DontUse</FullTextSearchOnInputByString>
 			<ChoiceDataGetModeOnInputByString>Directly</ChoiceDataGetModeOnInputByString>
-			<DefaultObjectForm/>
-			<DefaultListForm/>
+			<DefaultObjectForm>Document.НадходженняТоварівПослуг.Form.DocumentForm</DefaultObjectForm>
+			<DefaultListForm>Document.НадходженняТоварівПослуг.Form.ListForm</DefaultListForm>
 			<DefaultChoiceForm/>
 			<AuxiliaryObjectForm/>
 			<AuxiliaryListForm/>
@@ -241,6 +241,8 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Attribute>
+			<Form>DocumentForm</Form>
+			<Form>ListForm</Form>
 			<TabularSection uuid="99ad39c6-991e-4d8f-a420-13ea2da80c5a">
 				<InternalInfo>
 					<xr:GeneratedType name="DocumentTabularSection.НадходженняТоварівПослуг.ТаблицяНоменклатури" category="TabularSection">

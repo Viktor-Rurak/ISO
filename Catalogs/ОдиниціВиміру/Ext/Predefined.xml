@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.9">
+	<Item id="f8bb96a8-7089-4fcc-96e4-bb86837e9b49">
+		<Name>кілограм</Name>
+		<Code>002</Code>
+		<Description>кг</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="5c714717-2398-47c1-8b4d-90fccd674d08">
+		<Name>Літр</Name>
+		<Code>003</Code>
+		<Description>л</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="6d44b8bf-3ad9-4a18-a15b-c5739a8f6963">
+		<Name>штука</Name>
+		<Code>001</Code>
+		<Description>Шт</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

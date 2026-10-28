@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="FormCommandBar" id="-1"/>
+	<ChildItems>
+		<LabelDecoration name="НазваОрганізації" id="50">
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Назва організації</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="НазваОрганізаціїContextMenu" id="51"/>
+			<ExtendedTooltip name="НазваОрганізаціїExtendedTooltip" id="52"/>
+		</LabelDecoration>
+		<InputField name="Number" id="1">
+			<DataPath>Object.Number</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="NumberContextMenu" id="2"/>
+			<ExtendedTooltip name="NumberExtendedTooltip" id="3"/>
+		</InputField>
+		<InputField name="Date" id="4">
+			<DataPath>Object.Date</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="DateContextMenu" id="5"/>
+			<ExtendedTooltip name="DateExtendedTooltip" id="6"/>
+		</InputField>
+		<InputField name="Склад" id="7">
+			<DataPath>Object.Склад</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="СкладContextMenu" id="8"/>
+			<ExtendedTooltip name="СкладExtendedTooltip" id="9"/>
+		</InputField>
+		<InputField name="Контрагент" id="10">
+			<DataPath>Object.Контрагент</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="КонтрагентContextMenu" id="11"/>
+			<ExtendedTooltip name="КонтрагентExtendedTooltip" id="12"/>
+		</InputField>
+		<InputField name="Комірник" id="13">
+			<DataPath>Object.Комірник</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="КомірникContextMenu" id="14"/>
+			<ExtendedTooltip name="КомірникExtendedTooltip" id="15"/>
+		</InputField>
+		<InputField name="Сума" id="16">
+			<DataPath>Object.Сума</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="СумаContextMenu" id="17"/>
+			<ExtendedTooltip name="СумаExtendedTooltip" id="18"/>
+		</InputField>
+		<Table name="ТаблицяНоменклатури" id="19">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Object.ТаблицяНоменклатури</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ТаблицяНоменклатуриContextMenu" id="20"/>
+			<AutoCommandBar name="ТаблицяНоменклатуриCommandBar" id="21"/>
+			<ExtendedTooltip name="ТаблицяНоменклатуриExtendedTooltip" id="22"/>
+			<SearchStringAddition name="ТаблицяНоменклатуриSearchString" id="23">
+				<AdditionSource>
+					<Item>ТаблицяНоменклатури</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицяНоменклатуриSearchStringContextMenu" id="24"/>
+				<ExtendedTooltip name="ТаблицяНоменклатуриSearchStringExtendedTooltip" id="25"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ТаблицяНоменклатуриViewStatus" id="26">
+				<AdditionSource>
+					<Item>ТаблицяНоменклатури</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицяНоменклатуриViewStatusContextMenu" id="27"/>
+				<ExtendedTooltip name="ТаблицяНоменклатуриViewStatusExtendedTooltip" id="28"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ТаблицяНоменклатуриSearchControl" id="29">
+				<AdditionSource>
+					<Item>ТаблицяНоменклатури</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицяНоменклатуриSearchControlContextMenu" id="30"/>
+				<ExtendedTooltip name="ТаблицяНоменклатуриSearchControlExtendedTooltip" id="31"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="ТаблицяНоменклатуриLineNumber" id="32">
+					<DataPath>Object.ТаблицяНоменклатури.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицяНоменклатуриLineNumberContextMenu" id="33"/>
+					<ExtendedTooltip name="ТаблицяНоменклатуриLineNumberExtendedTooltip" id="34"/>
+				</LabelField>
+				<InputField name="ТаблицяНоменклатуриНоменклатура" id="35">
+					<DataPath>Object.ТаблицяНоменклатури.Номенклатура</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицяНоменклатуриНоменклатураContextMenu" id="36"/>
+					<ExtendedTooltip name="ТаблицяНоменклатуриНоменклатураExtendedTooltip" id="37"/>
+				</InputField>
+				<InputField name="ТаблицяНоменклатуриОдиницяВиміру" id="38">
+					<DataPath>Object.ТаблицяНоменклатури.ОдиницяВиміру</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицяНоменклатуриОдиницяВиміруContextMenu" id="39"/>
+					<ExtendedTooltip name="ТаблицяНоменклатуриОдиницяВиміруExtendedTooltip" id="40"/>
+				</InputField>
+				<InputField name="ТаблицяНоменклатуриКількість" id="41">
+					<DataPath>Object.ТаблицяНоменклатури.Кількість</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицяНоменклатуриКількістьContextMenu" id="42"/>
+					<ExtendedTooltip name="ТаблицяНоменклатуриКількістьExtendedTooltip" id="43"/>
+				</InputField>
+				<InputField name="ТаблицяНоменклатуриЦіна" id="44">
+					<DataPath>Object.ТаблицяНоменклатури.Ціна</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицяНоменклатуриЦінаContextMenu" id="45"/>
+					<ExtendedTooltip name="ТаблицяНоменклатуриЦінаExtendedTooltip" id="46"/>
+				</InputField>
+				<InputField name="ТаблицяНоменклатуриСума" id="47">
+					<DataPath>Object.ТаблицяНоменклатури.Сума</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицяНоменклатуриСумаContextMenu" id="48"/>
+					<ExtendedTooltip name="ТаблицяНоменклатуриСумаExtendedTooltip" id="49"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Object" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.НадходженняТоварівПослуг</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Object.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+	</Attributes>
+</Form>

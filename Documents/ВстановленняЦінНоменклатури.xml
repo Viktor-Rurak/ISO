@@ -49,8 +49,8 @@
 			<SearchStringModeOnInputByString>Begin</SearchStringModeOnInputByString>
 			<FullTextSearchOnInputByString>DontUse</FullTextSearchOnInputByString>
 			<ChoiceDataGetModeOnInputByString>Directly</ChoiceDataGetModeOnInputByString>
-			<DefaultObjectForm/>
-			<DefaultListForm/>
+			<DefaultObjectForm>Document.ВстановленняЦінНоменклатури.Form.DocumentForm</DefaultObjectForm>
+			<DefaultListForm>Document.ВстановленняЦінНоменклатури.Form.ListForm</DefaultListForm>
 			<DefaultChoiceForm/>
 			<AuxiliaryObjectForm/>
 			<AuxiliaryListForm/>
@@ -158,6 +158,8 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Attribute>
+			<Form>DocumentForm</Form>
+			<Form>ListForm</Form>
 			<TabularSection uuid="dc0668f1-4565-4512-b144-64c85e2a0e99">
 				<InternalInfo>
 					<xr:GeneratedType name="DocumentTabularSection.ВстановленняЦінНоменклатури.Номенклатура" category="TabularSection">

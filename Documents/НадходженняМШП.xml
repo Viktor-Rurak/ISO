@@ -181,8 +181,8 @@
 			<SearchStringModeOnInputByString>Begin</SearchStringModeOnInputByString>
 			<FullTextSearchOnInputByString>DontUse</FullTextSearchOnInputByString>
 			<ChoiceDataGetModeOnInputByString>Directly</ChoiceDataGetModeOnInputByString>
-			<DefaultObjectForm/>
-			<DefaultListForm/>
+			<DefaultObjectForm>Document.НадходженняМШП.Form.DocumentForm</DefaultObjectForm>
+			<DefaultListForm>Document.НадходженняМШП.Form.ListForm</DefaultListForm>
 			<DefaultChoiceForm/>
 			<AuxiliaryObjectForm/>
 			<AuxiliaryListForm/>
@@ -373,6 +373,8 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Attribute>
+			<Form>DocumentForm</Form>
+			<Form>ListForm</Form>
 			<TabularSection uuid="f139a9d8-de64-455a-ab8b-97a2d2430d86">
 				<InternalInfo>
 					<xr:GeneratedType name="DocumentTabularSection.НадходженняМШП.МШП" category="TabularSection">

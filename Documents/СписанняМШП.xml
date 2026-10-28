@@ -49,8 +49,8 @@
 			<SearchStringModeOnInputByString>Begin</SearchStringModeOnInputByString>
 			<FullTextSearchOnInputByString>DontUse</FullTextSearchOnInputByString>
 			<ChoiceDataGetModeOnInputByString>Directly</ChoiceDataGetModeOnInputByString>
-			<DefaultObjectForm/>
-			<DefaultListForm/>
+			<DefaultObjectForm>Document.СписанняМШП.Form.DocumentForm</DefaultObjectForm>
+			<DefaultListForm>Document.СписанняМШП.Form.ListForm</DefaultListForm>
 			<DefaultChoiceForm/>
 			<AuxiliaryObjectForm/>
 			<AuxiliaryListForm/>
@@ -165,7 +165,7 @@
 					<Synonym>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>МатеріальноВідповідальний</v8:content>
+							<v8:content>Голова комісії</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -237,6 +237,8 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Attribute>
+			<Form>DocumentForm</Form>
+			<Form>ListForm</Form>
 			<TabularSection uuid="50865e4d-8a10-499c-9a9b-d395ba56dd7e">
 				<InternalInfo>
 					<xr:GeneratedType name="DocumentTabularSection.СписанняМШП.МШП" category="TabularSection">

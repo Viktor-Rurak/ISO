@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="FormCommandBar" id="-1"/>
+	<ChildItems>
+		<LabelDecoration name="НазваОрганізації" id="47">
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Назва організації</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="НазваОрганізаціїContextMenu" id="48"/>
+			<ExtendedTooltip name="НазваОрганізаціїExtendedTooltip" id="49"/>
+		</LabelDecoration>
+		<InputField name="Number" id="1">
+			<DataPath>Object.Number</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="NumberContextMenu" id="2"/>
+			<ExtendedTooltip name="NumberExtendedTooltip" id="3"/>
+		</InputField>
+		<InputField name="Date" id="4">
+			<DataPath>Object.Date</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="DateContextMenu" id="5"/>
+			<ExtendedTooltip name="DateExtendedTooltip" id="6"/>
+		</InputField>
+		<InputField name="Підрозділ" id="7">
+			<DataPath>Object.Підрозділ</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ПідрозділContextMenu" id="8"/>
+			<ExtendedTooltip name="ПідрозділExtendedTooltip" id="9"/>
+		</InputField>
+		<InputField name="МатеріальноВідповідальний" id="10">
+			<DataPath>Object.МатеріальноВідповідальний</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="МатеріальноВідповідальнийContextMenu" id="11"/>
+			<ExtendedTooltip name="МатеріальноВідповідальнийExtendedTooltip" id="12"/>
+		</InputField>
+		<InputField name="ГоловаКомісії" id="13">
+			<DataPath>Object.ГоловаКомісії</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ГоловаКомісіїContextMenu" id="14"/>
+			<ExtendedTooltip name="ГоловаКомісіїExtendedTooltip" id="15"/>
+		</InputField>
+		<InputField name="Причина" id="16">
+			<DataPath>Object.Причина</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ПричинаContextMenu" id="17"/>
+			<ExtendedTooltip name="ПричинаExtendedTooltip" id="18"/>
+		</InputField>
+		<Table name="МШП" id="19">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Object.МШП</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="МШПContextMenu" id="20"/>
+			<AutoCommandBar name="МШПCommandBar" id="21"/>
+			<ExtendedTooltip name="МШПExtendedTooltip" id="22"/>
+			<SearchStringAddition name="МШПSearchString" id="23">
+				<AdditionSource>
+					<Item>МШП</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="МШПSearchStringContextMenu" id="24"/>
+				<ExtendedTooltip name="МШПSearchStringExtendedTooltip" id="25"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="МШПViewStatus" id="26">
+				<AdditionSource>
+					<Item>МШП</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="МШПViewStatusContextMenu" id="27"/>
+				<ExtendedTooltip name="МШПViewStatusExtendedTooltip" id="28"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="МШПSearchControl" id="29">
+				<AdditionSource>
+					<Item>МШП</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="МШПSearchControlContextMenu" id="30"/>
+				<ExtendedTooltip name="МШПSearchControlExtendedTooltip" id="31"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="МШПLineNumber" id="32">
+					<DataPath>Object.МШП.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="МШПLineNumberContextMenu" id="33"/>
+					<ExtendedTooltip name="МШПLineNumberExtendedTooltip" id="34"/>
+				</LabelField>
+				<InputField name="МШПНоменклатура" id="35">
+					<DataPath>Object.МШП.Номенклатура</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="МШПНоменклатураContextMenu" id="36"/>
+					<ExtendedTooltip name="МШПНоменклатураExtendedTooltip" id="37"/>
+				</InputField>
+				<InputField name="МШПКількість" id="38">
+					<DataPath>Object.МШП.Кількість</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="МШПКількістьContextMenu" id="39"/>
+					<ExtendedTooltip name="МШПКількістьExtendedTooltip" id="40"/>
+				</InputField>
+				<InputField name="МШПЦіна" id="41">
+					<DataPath>Object.МШП.Ціна</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="МШПЦінаContextMenu" id="42"/>
+					<ExtendedTooltip name="МШПЦінаExtendedTooltip" id="43"/>
+				</InputField>
+				<InputField name="МШПСума" id="44">
+					<DataPath>Object.МШП.Сума</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="МШПСумаContextMenu" id="45"/>
+					<ExtendedTooltip name="МШПСумаExtendedTooltip" id="46"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Object" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.СписанняМШП</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Object.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+	</Attributes>
+</Form>

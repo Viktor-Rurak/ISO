@@ -184,6 +184,7 @@
 			<Constant>НазваОрганізації</Constant>
 			<Constant>ДатаОстанньогоЗапуску</Constant>
 			<Constant>ВідповідальнийЗаМШПЗаЗамовчуванням</Constant>
+			<CommonForm>ФормиКонстант</CommonForm>
 			<Catalog>Склади</Catalog>
 			<Catalog>ОдиниціВиміру</Catalog>
 			<Catalog>Посади</Catalog>
