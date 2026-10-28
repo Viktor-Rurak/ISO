@@ -51,15 +51,29 @@
 		<Metadata name="Catalog.Номенклатура.Form.ItemForm.Form" id="b456b882-871c-4bb3-9477-e7ebcba6ad3a.0" configVersion="c3e38bf47eebdd47a7f5528bd0ae026b00000000"/>
 		<Metadata name="Catalog.Номенклатура.Form.ListForm" id="efabf1ea-b4a7-4092-8f54-9ddc61c05ca6" configVersion="b573f97bd8d95c4e9eeadb4414250e9b00000000"/>
 		<Metadata name="Catalog.Номенклатура.Form.ListForm.Form" id="efabf1ea-b4a7-4092-8f54-9ddc61c05ca6.0" configVersion="d01cc6fe4c2a534a99f44ddb60a582a100000000"/>
-		<Metadata name="Catalog.ОдиниціВиміру" id="4d40af59-7e42-4265-a3ee-21bbef658c58" configVersion="5df73892ae071842bf84299879d7a70800000000"/>
+		<Metadata name="Catalog.ОдиниціВиміру" id="4d40af59-7e42-4265-a3ee-21bbef658c58" configVersion="429bf6f8e99c554995b2016945937adf00000000"/>
+		<Metadata name="Catalog.ОдиниціВиміру.Form.ItemForm" id="3bc4309f-30c1-4a2f-aec4-80f2e135192b" configVersion="d42f5d708e5a574cb2b97f957194c8f200000000"/>
+		<Metadata name="Catalog.ОдиниціВиміру.Form.ItemForm.Form" id="3bc4309f-30c1-4a2f-aec4-80f2e135192b.0" configVersion="2c4c7268c47da745b889a09073c8b3f500000000"/>
+		<Metadata name="Catalog.ОдиниціВиміру.Form.ListForm" id="266c278c-b594-470b-9f3a-b9114e74de30" configVersion="029f5768243095478669822a60c04d2300000000"/>
+		<Metadata name="Catalog.ОдиниціВиміру.Form.ListForm.Form" id="266c278c-b594-470b-9f3a-b9114e74de30.0" configVersion="98902f7eb232bf47b2a44a4ed50f156100000000"/>
 		<Metadata name="Catalog.ОдиниціВиміру.Predefined" id="4d40af59-7e42-4265-a3ee-21bbef658c58.1c" configVersion="4fdd34c8cca8dd419318ba9c9686248200000000"/>
-		<Metadata name="Catalog.Посади" id="4f3d1dba-25b1-4a2f-9d92-c035f6e39ea4" configVersion="1f13c43c6d478044aeb736be046033e500000000"/>
-		<Metadata name="Catalog.Підрозділи" id="0fa09156-9c90-46ed-b9e1-008acacdfa24" configVersion="f68770d917b77643bd55754e9e308b5000000000"/>
-		<Metadata name="Catalog.Склади" id="2fd5802e-c576-49ae-9529-d010036646bc" configVersion="cc2be30f2aabae46abf4b62332e6048500000000">
+		<Metadata name="Catalog.Посади" id="4f3d1dba-25b1-4a2f-9d92-c035f6e39ea4" configVersion="1de5ae3cdff3a74796648b8b31b73f0d00000000"/>
+		<Metadata name="Catalog.Посади.Form.ItemForm" id="66ad63be-0fcb-44ed-a7b6-ac45c18578f3" configVersion="5cb143c8125adb40a4e36e0402548bb400000000"/>
+		<Metadata name="Catalog.Посади.Form.ItemForm.Form" id="66ad63be-0fcb-44ed-a7b6-ac45c18578f3.0" configVersion="027c0210f6ddf34593c9dc3fa9d6b3e200000000"/>
+		<Metadata name="Catalog.Посади.Form.ListForm" id="35fe375d-8e61-4bf5-82f2-d69cb031ceec" configVersion="eebeb930df1ec3479d1b3b159f4392ce00000000"/>
+		<Metadata name="Catalog.Посади.Form.ListForm.Form" id="35fe375d-8e61-4bf5-82f2-d69cb031ceec.0" configVersion="4cf00e92e4d1d04fbeaea80103b2e54800000000"/>
+		<Metadata name="Catalog.Підрозділи" id="0fa09156-9c90-46ed-b9e1-008acacdfa24" configVersion="8bcd15320beab948947e713e0b17a79100000000"/>
+		<Metadata name="Catalog.Підрозділи.Form.ItemForm" id="c8d70716-284a-41da-9658-3528d032b24d" configVersion="fd19c499c51a4147931bfaa87d1765be00000000"/>
+		<Metadata name="Catalog.Підрозділи.Form.ItemForm.Form" id="c8d70716-284a-41da-9658-3528d032b24d.0" configVersion="9ce7d6038a57204481011cbcc464f19c00000000"/>
+		<Metadata name="Catalog.Підрозділи.Form.ListForm" id="651a5cbb-e354-4ffe-9ae5-3e8cdcd8b780" configVersion="830cd013b67d194ab01a41fea165ec7200000000"/>
+		<Metadata name="Catalog.Підрозділи.Form.ListForm.Form" id="651a5cbb-e354-4ffe-9ae5-3e8cdcd8b780.0" configVersion="d88a88ee99d9d8479d0d1a77cce7c59800000000"/>
+		<Metadata name="Catalog.Склади" id="2fd5802e-c576-49ae-9529-d010036646bc" configVersion="7ff98e8fe1af424a981203a953938a3300000000">
 			<Metadata name="Catalog.Склади.Attribute.ТипСкладу" id="33b2108a-809a-4834-9305-92b4b9b390b0"/>
 		</Metadata>
 		<Metadata name="Catalog.Склади.Form.ItemForm" id="1d1ff0a8-d2d3-41e6-ab06-cf324c186ee4" configVersion="47d2c3e56583c94581084c32dbdc701900000000"/>
 		<Metadata name="Catalog.Склади.Form.ItemForm.Form" id="1d1ff0a8-d2d3-41e6-ab06-cf324c186ee4.0" configVersion="eaf85c4b9ff72445a7a7b5349b5dbe3c00000000"/>
+		<Metadata name="Catalog.Склади.Form.ListForm" id="aad92d74-f08b-4b28-a154-1a62356290c1" configVersion="eb7c9d246162e341bc17bc4aa8c82cd000000000"/>
+		<Metadata name="Catalog.Склади.Form.ListForm.Form" id="aad92d74-f08b-4b28-a154-1a62356290c1.0" configVersion="356386747991a740b5281b647a80592b00000000"/>
 		<Metadata name="Catalog.Співробітники" id="650b585b-28ac-430f-b93f-9f11a916312c" configVersion="e0e8ab6d2f3eb146bb299e63f2fff73100000000">
 			<Metadata name="Catalog.Співробітники.Attribute.Посада" id="028c74e9-5813-49c5-be61-f3a3e77307ee"/>
 			<Metadata name="Catalog.Співробітники.Attribute.Імя" id="15645fdd-57d0-48ef-95eb-7db814bd836b"/>
