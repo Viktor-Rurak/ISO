@@ -175,7 +175,21 @@
 		</Properties>
 		<ChildObjects>
 			<Language>English</Language>
+			<Subsystem>Закупка</Subsystem>
+			<Subsystem>Склад</Subsystem>
+			<Subsystem>Продаж</Subsystem>
+			<Subsystem>МШП</Subsystem>
+			<Subsystem>Адміністрація</Subsystem>
+			<CommonPicture>ПідсистемаСклад</CommonPicture>
+			<CommonPicture>ПідсистемаЗакупка</CommonPicture>
+			<CommonPicture>ПідсистемаПродаж</CommonPicture>
+			<CommonPicture>ПідсистемаМШП</CommonPicture>
+			<CommonPicture>ПідсистемаАдміністрація</CommonPicture>
 			<Role>Адміністратор</Role>
+			<Role>Менеджер</Role>
+			<Role>Комірник</Role>
+			<Role>Продавець</Role>
+			<CommonModule>AtServer</CommonModule>
 			<Constant>Директор</Constant>
 			<Constant>ГоловБухгалтер</Constant>
 			<Constant>КомірникЗаЗамовчуванням</Constant>
