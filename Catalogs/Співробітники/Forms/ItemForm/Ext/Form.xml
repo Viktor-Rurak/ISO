@@ -12,6 +12,7 @@
 		</InputField>
 		<InputField name="Description" id="4">
 			<DataPath>Object.Description</DataPath>
+			<ReadOnly>true</ReadOnly>
 			<EditMode>EnterOnInput</EditMode>
 			<ContextMenu name="DescriptionContextMenu" id="5"/>
 			<ExtendedTooltip name="DescriptionExtendedTooltip" id="6"/>
@@ -21,18 +22,27 @@
 			<EditMode>EnterOnInput</EditMode>
 			<ContextMenu name="ПрізвищеContextMenu" id="8"/>
 			<ExtendedTooltip name="ПрізвищеExtendedTooltip" id="9"/>
+			<Events>
+				<Event name="OnChange">ПІБOnChange</Event>
+			</Events>
 		</InputField>
 		<InputField name="Імя" id="10">
 			<DataPath>Object.Імя</DataPath>
 			<EditMode>EnterOnInput</EditMode>
 			<ContextMenu name="ІмяContextMenu" id="11"/>
 			<ExtendedTooltip name="ІмяExtendedTooltip" id="12"/>
+			<Events>
+				<Event name="OnChange">ПІБOnChange</Event>
+			</Events>
 		</InputField>
 		<InputField name="ПоБатькові" id="13">
 			<DataPath>Object.ПоБатькові</DataPath>
 			<EditMode>EnterOnInput</EditMode>
 			<ContextMenu name="ПоБатьковіContextMenu" id="14"/>
 			<ExtendedTooltip name="ПоБатьковіExtendedTooltip" id="15"/>
+			<Events>
+				<Event name="OnChange">ПІБOnChange</Event>
+			</Events>
 		</InputField>
 		<InputField name="Посада" id="16">
 			<DataPath>Object.Посада</DataPath>

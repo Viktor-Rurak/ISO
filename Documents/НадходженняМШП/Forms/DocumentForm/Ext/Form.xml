@@ -4,6 +4,10 @@
 	<UsePostingMode>Auto</UsePostingMode>
 	<RepostOnWrite>true</RepostOnWrite>
 	<AutoCommandBar name="FormCommandBar" id="-1"/>
+	<Events>
+		<Event name="OnOpen">OnOpen</Event>
+		<Event name="OnCreateAtServer">OnCreateAtServer</Event>
+	</Events>
 	<ChildItems>
 		<LabelDecoration name="НазваОрганізації" id="50">
 			<Title formatted="false">
@@ -109,12 +113,18 @@
 					<EditMode>EnterOnInput</EditMode>
 					<ContextMenu name="МШПКількістьContextMenu" id="42"/>
 					<ExtendedTooltip name="МШПКількістьExtendedTooltip" id="43"/>
+					<Events>
+						<Event name="OnChange">МШПКількістьOnChange</Event>
+					</Events>
 				</InputField>
 				<InputField name="МШПЦіна" id="44">
 					<DataPath>Object.МШП.Ціна</DataPath>
 					<EditMode>EnterOnInput</EditMode>
 					<ContextMenu name="МШПЦінаContextMenu" id="45"/>
 					<ExtendedTooltip name="МШПЦінаExtendedTooltip" id="46"/>
+					<Events>
+						<Event name="OnChange">МШПЦінаOnChange</Event>
+					</Events>
 				</InputField>
 				<InputField name="МШПСума" id="47">
 					<DataPath>Object.МШП.Сума</DataPath>
