@@ -7,26 +7,26 @@ Procedure PrintДрукувати(Spreadsheet, Ref) Export
 	Query = New Query;
 	Query.Text =
 	"SELECT
-	|	Номенклатура.Code AS Code,
-	|	Номенклатура.Description AS Description,
-	|	Номенклатура.Parent AS Parent,
-	|	Номенклатура.ВидНоменклатури AS ВидНоменклатури,
-	|	Номенклатура.ОдиницяВиміру AS ОдиницяВиміру,
-	|	Номенклатура.СтрокВикористання AS СтрокВикористання,
+	|	Ном.Code AS Code,
+	|	Ном.Description AS Description,
+	|	Ном.Parent AS Parent,
+	|	Ном.ВидНоменклатури AS ВидНоменклатури,
+	|	Ном.ОдиницяВиміру AS ОдиницяВиміру,
+	|	Ном.СтрокВикористання AS СтрокВикористання,
 	|	ISNULL(ЦіниЗакупівлі.Ціна, 0) AS ЦінаЗакупівлі,
 	|	ISNULL(ЦіниРоздрібні.Ціна, 0) AS ЦінаРоздрібна,
 	|	ISNULL(ЦіниГуртові.Ціна, 0) AS ЦінаГуртова
 	|FROM
-	|	Catalog.Номенклатура AS Номенклатура
+	|	Catalog.Номенклатура AS Ном
 	|		LEFT JOIN InformationRegister.ЦіниНоменклатури.SliceLast(&Period, ТипЦіни = VALUE(Enum.ТипиЦін.Закупівельні)) AS ЦіниЗакупівлі
-	|		ON (ЦіниЗакупівлі.Номенклатура = Номенклатура.Ref)
+	|		ON (ЦіниЗакупівлі.Номенклатура = Ном.Ref)
 	|		LEFT JOIN InformationRegister.ЦіниНоменклатури.SliceLast(&Period, ТипЦіни = VALUE(Enum.ТипиЦін.Роздрібні)) AS ЦіниРоздрібні
-	|		ON (ЦіниРоздрібні.Номенклатура = Номенклатура.Ref)
+	|		ON (ЦіниРоздрібні.Номенклатура = Ном.Ref)
 	|		LEFT JOIN InformationRegister.ЦіниНоменклатури.SliceLast(&Period, ТипЦіни = VALUE(Enum.ТипиЦін.Гуртові)) AS ЦіниГуртові
-	|		ON (ЦіниГуртові.Номенклатура = Номенклатура.Ref)
+	|		ON (ЦіниГуртові.Номенклатура = Ном.Ref)
 	|WHERE
-	|	Номенклатура.Ref IN (&Ref)
-	|	AND NOT Номенклатура.IsFolder";
+	|	Ном.Ref IN (&Ref)
+	|	AND NOT Ном.IsFolder";
 	Query.SetParameter("Ref", Ref);
 	Query.SetParameter("Period", CurrentDate());
 	Selection = Query.Execute().Select();
@@ -45,5 +45,41 @@ Procedure PrintДрукувати(Spreadsheet, Ref) Export
 		Header.Parameters.ДатаЦін = Format(CurrentDate(), "DF=dd.MM.yyyy");
 		Spreadsheet.Put(Header);
 		InsertPageBreak = True;
+	EndDo;
+EndProcedure
+
+// Друкована форма списку номенклатури з роздрібними цінами
+Procedure PrintСписок(Spreadsheet) Export
+	SetPrivilegedMode(True);
+	Template = Catalogs.Номенклатура.GetTemplate("PrintСписок");
+	Query = New Query;
+	Query.Text =
+	"SELECT
+	|	Ном.Description AS Description,
+	|	Ном.ВидНоменклатури AS ВидНоменклатури,
+	|	ISNULL(Ціни.Ціна, 0) AS ЦінаРоздрібна
+	|FROM
+	|	Catalog.Номенклатура AS Ном
+	|		LEFT JOIN InformationRegister.ЦіниНоменклатури.SliceLast(&Period, ТипЦіни = VALUE(Enum.ТипиЦін.Роздрібні)) AS Ціни
+	|		ON (Ціни.Номенклатура = Ном.Ref)
+	|WHERE
+	|	NOT Ном.IsFolder
+	|	AND NOT Ном.DeletionMark
+	|
+	|ORDER BY
+	|	Description";
+	Query.SetParameter("Period", CurrentDate());
+	Selection = Query.Execute().Select();
+
+	Spreadsheet.Clear();
+	Spreadsheet.Put(Template.GetArea("Caption"));
+	Spreadsheet.Put(Template.GetArea("TableHeader"));
+	Area = Template.GetArea("Row");
+	N = 0;
+	While Selection.Next() Do
+		N = N + 1;
+		Area.Parameters.Fill(Selection);
+		Area.Parameters.N = N;
+		Spreadsheet.Put(Area);
 	EndDo;
 EndProcedure

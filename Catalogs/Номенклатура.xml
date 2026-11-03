@@ -297,7 +297,7 @@
 			<FullTextSearchOnInputByString>DontUse</FullTextSearchOnInputByString>
 			<ChoiceDataGetModeOnInputByString>Directly</ChoiceDataGetModeOnInputByString>
 			<DefaultObjectForm>Catalog.Номенклатура.Form.ItemForm</DefaultObjectForm>
-			<DefaultFolderForm/>
+			<DefaultFolderForm>Catalog.Номенклатура.Form.FolderForm</DefaultFolderForm>
 			<DefaultListForm>Catalog.Номенклатура.Form.ListForm</DefaultListForm>
 			<DefaultChoiceForm/>
 			<DefaultFolderChoiceForm/>
@@ -628,6 +628,7 @@
 			</Attribute>
 			<Form>ItemForm</Form>
 			<Form>ListForm</Form>
+			<Form>FolderForm</Form>
 			<Template>PrintДрукувати</Template>
 			<Command uuid="9b69498b-3f89-4f0b-adcb-6f917b29c657">
 				<Properties>
@@ -636,6 +637,29 @@
 						<v8:item>
 							<v8:lang>en</v8:lang>
 							<v8:content>Друкувати</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Group>FormCommandBarImportant</Group>
+					<CommandParameterType>
+						<v8:Type>cfg:CatalogRef.Номенклатура</v8:Type>
+					</CommandParameterType>
+					<ParameterUseMode>Multiple</ParameterUseMode>
+					<ModifiesData>false</ModifiesData>
+					<Representation>Auto</Representation>
+					<ToolTip/>
+					<Picture/>
+					<Shortcut/>
+				</Properties>
+			</Command>
+			<Template>PrintСписок</Template>
+			<Command uuid="ed12cf2a-7786-47ed-b722-5898eae5bfcc">
+				<Properties>
+					<Name>PrintСписок</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Друк списку</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
