@@ -628,6 +628,29 @@
 			</Attribute>
 			<Form>ItemForm</Form>
 			<Form>ListForm</Form>
+			<Template>PrintДрукувати</Template>
+			<Command uuid="9b69498b-3f89-4f0b-adcb-6f917b29c657">
+				<Properties>
+					<Name>PrintДрукувати</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Друкувати</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Group>FormCommandBarImportant</Group>
+					<CommandParameterType>
+						<v8:Type>cfg:CatalogRef.Номенклатура</v8:Type>
+					</CommandParameterType>
+					<ParameterUseMode>Multiple</ParameterUseMode>
+					<ModifiesData>false</ModifiesData>
+					<Representation>Auto</Representation>
+					<ToolTip/>
+					<Picture/>
+					<Shortcut/>
+				</Properties>
+			</Command>
 		</ChildObjects>
 	</Catalog>
 </MetaDataObject>

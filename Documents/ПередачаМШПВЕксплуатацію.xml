@@ -389,6 +389,29 @@
 					</Attribute>
 				</ChildObjects>
 			</TabularSection>
+			<Template>PrintДрукувати</Template>
+			<Command uuid="aa38744c-fa08-4f8b-be3e-6c3236cb4fd6">
+				<Properties>
+					<Name>PrintДрукувати</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Друкувати</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Group>FormCommandBarImportant</Group>
+					<CommandParameterType>
+						<v8:Type>cfg:DocumentRef.ПередачаМШПВЕксплуатацію</v8:Type>
+					</CommandParameterType>
+					<ParameterUseMode>Multiple</ParameterUseMode>
+					<ModifiesData>false</ModifiesData>
+					<Representation>Auto</Representation>
+					<ToolTip/>
+					<Picture/>
+					<Shortcut/>
+				</Properties>
+			</Command>
 		</ChildObjects>
 	</Document>
 </MetaDataObject>
