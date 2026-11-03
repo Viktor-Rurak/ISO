@@ -374,7 +374,7 @@
 					<Synonym>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>ЦінаРоздрібна</v8:content>
+							<v8:content>Ціна роздрібна</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -419,7 +419,7 @@
 					<Synonym>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>ЦінаГуртова</v8:content>
+							<v8:content>Ціна гуртова</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -544,7 +544,7 @@
 					<Synonym>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>ДатаПерегляду</v8:content>
+							<v8:content>Дата перегляду</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
