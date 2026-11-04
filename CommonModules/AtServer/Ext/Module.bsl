@@ -29,3 +29,7 @@ EndFunction
 Function GetDefaultResponsibleMSHP() Export
 	Return Constants.ВідповідальнийЗаМШПЗаЗамовчуванням.Get();
 EndFunction
+
+Function GetDefaultStorekeeper() Export
+	Return Constants.КомірникЗаЗамовчуванням.Get();
+EndFunction

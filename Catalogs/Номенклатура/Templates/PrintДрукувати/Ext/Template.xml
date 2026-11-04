@@ -62,68 +62,6 @@
 			</column>
 		</columnsItem>
 	</columns>
-	<columns>
-		<id>b1aacd96-5123-4406-98ea-d2d98a9029d0</id>
-		<size>5</size>
-		<columnsItem>
-			<index>0</index>
-			<column>
-				<formatIndex>1</formatIndex>
-			</column>
-		</columnsItem>
-		<columnsItem>
-			<index>1</index>
-			<column>
-				<formatIndex>6</formatIndex>
-			</column>
-		</columnsItem>
-		<columnsItem>
-			<index>2</index>
-			<column>
-				<formatIndex>7</formatIndex>
-			</column>
-		</columnsItem>
-		<columnsItem>
-			<index>3</index>
-			<column>
-				<formatIndex>8</formatIndex>
-			</column>
-		</columnsItem>
-		<columnsItem>
-			<index>4</index>
-			<column>
-				<formatIndex>9</formatIndex>
-			</column>
-		</columnsItem>
-	</columns>
-	<columns>
-		<id>ff6e4c2a-b188-4505-b862-de4dd2eb60b5</id>
-		<size>4</size>
-		<columnsItem>
-			<index>0</index>
-			<column>
-				<formatIndex>1</formatIndex>
-			</column>
-		</columnsItem>
-		<columnsItem>
-			<index>1</index>
-			<column>
-				<formatIndex>6</formatIndex>
-			</column>
-		</columnsItem>
-		<columnsItem>
-			<index>2</index>
-			<column>
-				<formatIndex>4</formatIndex>
-			</column>
-		</columnsItem>
-		<columnsItem>
-			<index>3</index>
-			<column>
-				<formatIndex>10</formatIndex>
-			</column>
-		</columnsItem>
-	</columns>
 	<rowsItem>
 		<index>0</index>
 		<row>
@@ -134,11 +72,11 @@
 		<index>1</index>
 		<row>
 			<columnsID>b3128a18-7f59-4cae-9215-c4c5acd557a0</columnsID>
-			<formatIndex>11</formatIndex>
+			<formatIndex>6</formatIndex>
 			<c>
 				<i>1</i>
 				<c>
-					<f>12</f>
+					<f>7</f>
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
@@ -162,7 +100,7 @@
 			<c>
 				<i>1</i>
 				<c>
-					<f>13</f>
+					<f>8</f>
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
@@ -173,7 +111,7 @@
 			</c>
 			<c>
 				<c>
-					<f>14</f>
+					<f>9</f>
 					<parameter>Code</parameter>
 				</c>
 			</c>
@@ -186,7 +124,7 @@
 			<c>
 				<i>1</i>
 				<c>
-					<f>13</f>
+					<f>8</f>
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
@@ -197,7 +135,7 @@
 			</c>
 			<c>
 				<c>
-					<f>14</f>
+					<f>9</f>
 					<parameter>Description</parameter>
 				</c>
 			</c>
@@ -210,7 +148,7 @@
 			<c>
 				<i>1</i>
 				<c>
-					<f>13</f>
+					<f>8</f>
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
@@ -221,7 +159,7 @@
 			</c>
 			<c>
 				<c>
-					<f>14</f>
+					<f>9</f>
 					<parameter>Parent</parameter>
 				</c>
 			</c>
@@ -234,7 +172,7 @@
 			<c>
 				<i>1</i>
 				<c>
-					<f>13</f>
+					<f>8</f>
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
@@ -245,7 +183,7 @@
 			</c>
 			<c>
 				<c>
-					<f>14</f>
+					<f>9</f>
 					<parameter>ВидНоменклатури</parameter>
 				</c>
 			</c>
@@ -258,7 +196,7 @@
 			<c>
 				<i>1</i>
 				<c>
-					<f>13</f>
+					<f>8</f>
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
@@ -269,7 +207,7 @@
 			</c>
 			<c>
 				<c>
-					<f>14</f>
+					<f>9</f>
 					<parameter>ОдиницяВиміру</parameter>
 				</c>
 			</c>
@@ -282,7 +220,7 @@
 			<c>
 				<i>1</i>
 				<c>
-					<f>13</f>
+					<f>8</f>
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
@@ -293,7 +231,7 @@
 			</c>
 			<c>
 				<c>
-					<f>14</f>
+					<f>9</f>
 					<parameter>СтрокВикористання</parameter>
 				</c>
 			</c>
@@ -306,7 +244,7 @@
 			<c>
 				<i>1</i>
 				<c>
-					<f>13</f>
+					<f>8</f>
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
@@ -317,7 +255,7 @@
 			</c>
 			<c>
 				<c>
-					<f>14</f>
+					<f>9</f>
 					<parameter>ЦінаЗакупівлі</parameter>
 				</c>
 			</c>
@@ -330,7 +268,7 @@
 			<c>
 				<i>1</i>
 				<c>
-					<f>13</f>
+					<f>8</f>
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
@@ -341,7 +279,7 @@
 			</c>
 			<c>
 				<c>
-					<f>14</f>
+					<f>9</f>
 					<parameter>ЦінаРоздрібна</parameter>
 				</c>
 			</c>
@@ -354,7 +292,7 @@
 			<c>
 				<i>1</i>
 				<c>
-					<f>13</f>
+					<f>8</f>
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
@@ -365,7 +303,7 @@
 			</c>
 			<c>
 				<c>
-					<f>14</f>
+					<f>9</f>
 					<parameter>ЦінаГуртова</parameter>
 				</c>
 			</c>
@@ -378,7 +316,7 @@
 			<c>
 				<i>1</i>
 				<c>
-					<f>13</f>
+					<f>8</f>
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
@@ -389,14 +327,14 @@
 			</c>
 			<c>
 				<c>
-					<f>14</f>
+					<f>9</f>
 					<parameter>ДатаЦін</parameter>
 				</c>
 			</c>
 		</row>
 	</rowsItem>
 	<templateMode>true</templateMode>
-	<defaultFormatIndex>20</defaultFormatIndex>
+	<defaultFormatIndex>10</defaultFormatIndex>
 	<height>13</height>
 	<vgRows>13</vgRows>
 	<merge>
@@ -470,11 +408,7 @@
 			<endColumn>-1</endColumn>
 		</area>
 	</namedItem>
-	<line width="1" gap="false">
-		<v8ui:style xsi:type="v8ui:SpreadsheetDocumentCellLineType">Solid</v8ui:style>
-	</line>
 	<font faceName="Arial" height="16" bold="true" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
-	<font faceName="Arial" height="8" bold="true" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
 	<format>
 		<width>16</width>
 	</format>
@@ -491,21 +425,6 @@
 		<width>428</width>
 	</format>
 	<format>
-		<width>86</width>
-	</format>
-	<format>
-		<width>307</width>
-	</format>
-	<format>
-		<width>115</width>
-	</format>
-	<format>
-		<width>144</width>
-	</format>
-	<format>
-		<width>553</width>
-	</format>
-	<format>
 		<font>0</font>
 	</format>
 	<format>
@@ -520,46 +439,6 @@
 		<textPlacement>Wrap</textPlacement>
 		<fillType>Parameter</fillType>
 		<markNegatives>false</markNegatives>
-	</format>
-	<format>
-		<columnSizeChange>QuickChange</columnSizeChange>
-	</format>
-	<format>
-		<font>1</font>
-		<border>0</border>
-		<horizontalAlignment>Center</horizontalAlignment>
-		<verticalAlignment>Center</verticalAlignment>
-		<textPlacement>Wrap</textPlacement>
-		<columnSizeChange>QuickChange</columnSizeChange>
-	</format>
-	<format>
-		<border>0</border>
-		<horizontalAlignment>Right</horizontalAlignment>
-		<verticalAlignment>Top</verticalAlignment>
-		<textPlacement>Block</textPlacement>
-		<fillType>Parameter</fillType>
-		<markNegatives>false</markNegatives>
-	</format>
-	<format>
-		<border>0</border>
-		<verticalAlignment>Top</verticalAlignment>
-		<textPlacement>Wrap</textPlacement>
-		<fillType>Parameter</fillType>
-		<markNegatives>false</markNegatives>
-	</format>
-	<format>
-		<border>0</border>
-		<horizontalAlignment>Right</horizontalAlignment>
-		<verticalAlignment>Top</verticalAlignment>
-		<textPlacement>Block</textPlacement>
-		<fillType>Parameter</fillType>
-		<markNegatives>false</markNegatives>
-		<format>
-			<v8:item>
-				<v8:lang>en</v8:lang>
-				<v8:content>ND=15;NFD=2</v8:content>
-			</v8:item>
-		</format>
 	</format>
 	<format>
 		<width>72</width>

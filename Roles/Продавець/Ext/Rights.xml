@@ -4,14 +4,7 @@
 	<setForAttributesByDefault>true</setForAttributesByDefault>
 	<independentRightsOfChildObjects>false</independentRightsOfChildObjects>
 	<object>
-		<name>Catalog.Номенклатура.Command.PrintСписок</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>Catalog.Номенклатура.Command.PrintДрукувати</name>
+		<name>Document.ПродажТоварівПослугПродукції.Command.PrintДрукувати</name>
 		<right>
 			<name>View</name>
 			<value>true</value>
@@ -402,6 +395,13 @@
 		</right>
 	</object>
 	<object>
+		<name>Catalog.Номенклатура.Command.PrintДрукувати</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>Report.РейтингПокупців</name>
 		<right>
 			<name>Use</name>
@@ -503,6 +503,13 @@
 		</right>
 		<right>
 			<name>InputByString</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Номенклатура.Command.PrintСписок</name>
+		<right>
+			<name>View</name>
 			<value>true</value>
 		</right>
 	</object>

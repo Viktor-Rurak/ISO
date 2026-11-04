@@ -630,6 +630,7 @@
 			<Form>ListForm</Form>
 			<Form>FolderForm</Form>
 			<Template>PrintДрукувати</Template>
+			<Template>PrintСписок</Template>
 			<Command uuid="9b69498b-3f89-4f0b-adcb-6f917b29c657">
 				<Properties>
 					<Name>PrintДрукувати</Name>
@@ -652,7 +653,6 @@
 					<Shortcut/>
 				</Properties>
 			</Command>
-			<Template>PrintСписок</Template>
 			<Command uuid="ed12cf2a-7786-47ed-b722-5898eae5bfcc">
 				<Properties>
 					<Name>PrintСписок</Name>

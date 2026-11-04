@@ -6,6 +6,7 @@ Procedure OnOpen(Cancel)
 		Object.ОдиницяВиміру = AtServer.GetDefaultUnit();
 	EndIf;
 	FillPrices();
+	Modified = False;
 EndProcedure
 
 &AtServer

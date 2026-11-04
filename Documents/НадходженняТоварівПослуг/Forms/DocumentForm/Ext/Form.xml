@@ -4,6 +4,10 @@
 	<UsePostingMode>Auto</UsePostingMode>
 	<RepostOnWrite>true</RepostOnWrite>
 	<AutoCommandBar name="FormCommandBar" id="-1"/>
+	<Events>
+		<Event name="OnOpen">OnOpen</Event>
+		<Event name="OnCreateAtServer">OnCreateAtServer</Event>
+	</Events>
 	<ChildItems>
 		<LabelDecoration name="НазваОрганізації" id="50">
 			<Title formatted="false">
@@ -47,6 +51,7 @@
 		</InputField>
 		<InputField name="Сума" id="16">
 			<DataPath>Object.Сума</DataPath>
+			<ReadOnly>true</ReadOnly>
 			<EditMode>EnterOnInput</EditMode>
 			<ContextMenu name="СумаContextMenu" id="17"/>
 			<ExtendedTooltip name="СумаExtendedTooltip" id="18"/>
@@ -109,12 +114,18 @@
 					<EditMode>EnterOnInput</EditMode>
 					<ContextMenu name="ТаблицяНоменклатуриКількістьContextMenu" id="42"/>
 					<ExtendedTooltip name="ТаблицяНоменклатуриКількістьExtendedTooltip" id="43"/>
+					<Events>
+						<Event name="OnChange">РядокКількістьOnChange</Event>
+					</Events>
 				</InputField>
 				<InputField name="ТаблицяНоменклатуриЦіна" id="44">
 					<DataPath>Object.ТаблицяНоменклатури.Ціна</DataPath>
 					<EditMode>EnterOnInput</EditMode>
 					<ContextMenu name="ТаблицяНоменклатуриЦінаContextMenu" id="45"/>
 					<ExtendedTooltip name="ТаблицяНоменклатуриЦінаExtendedTooltip" id="46"/>
+					<Events>
+						<Event name="OnChange">РядокЦінаOnChange</Event>
+					</Events>
 				</InputField>
 				<InputField name="ТаблицяНоменклатуриСума" id="47">
 					<DataPath>Object.ТаблицяНоменклатури.Сума</DataPath>
