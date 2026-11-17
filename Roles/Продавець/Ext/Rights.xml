@@ -4,13 +4,6 @@
 	<setForAttributesByDefault>true</setForAttributesByDefault>
 	<independentRightsOfChildObjects>false</independentRightsOfChildObjects>
 	<object>
-		<name>Document.ПродажТоварівПослугПродукції.Command.PrintДрукувати</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
 		<name>Subsystem.Продаж</name>
 		<right>
 			<name>View</name>
@@ -95,6 +88,13 @@
 		</right>
 		<right>
 			<name>InputByString</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Document.ПродажТоварівПослугПродукції.Command.PrintДрукувати</name>
+		<right>
+			<name>View</name>
 			<value>true</value>
 		</right>
 	</object>

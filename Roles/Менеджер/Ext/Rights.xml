@@ -4,13 +4,6 @@
 	<setForAttributesByDefault>true</setForAttributesByDefault>
 	<independentRightsOfChildObjects>false</independentRightsOfChildObjects>
 	<object>
-		<name>Document.НадходженняТоварівПослуг.Command.PrintДрукувати</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
 		<name>Document.ВстановленняЦінНоменклатури</name>
 		<right>
 			<name>Read</name>
@@ -291,6 +284,13 @@
 		</right>
 		<right>
 			<name>InputByString</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Document.НадходженняТоварівПослуг.Command.PrintДрукувати</name>
+		<right>
+			<name>View</name>
 			<value>true</value>
 		</right>
 	</object>

@@ -4,27 +4,6 @@
 	<setForAttributesByDefault>true</setForAttributesByDefault>
 	<independentRightsOfChildObjects>false</independentRightsOfChildObjects>
 	<object>
-		<name>Document.НадходженняТоварівПослуг.Command.PrintДрукувати</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>Document.ПереміщенняНоменклатури.Command.PrintДрукувати</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>Document.ПродажТоварівПослугПродукції.Command.PrintДрукувати</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
 		<name>Document.ВстановленняЦінНоменклатури</name>
 		<right>
 			<name>Read</name>
@@ -983,6 +962,13 @@
 		</right>
 	</object>
 	<object>
+		<name>Document.НадходженняТоварівПослуг.Command.PrintДрукувати</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>AccumulationRegister.МШПВЕксплуатації</name>
 		<right>
 			<name>Read</name>
@@ -1120,6 +1106,13 @@
 		</right>
 		<right>
 			<name>SwitchToDataHistoryVersion</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Document.ПродажТоварівПослугПродукції.Command.PrintДрукувати</name>
+		<right>
+			<name>View</name>
 			<value>true</value>
 		</right>
 	</object>
@@ -2364,6 +2357,13 @@
 		</right>
 		<right>
 			<name>SwitchToDataHistoryVersion</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Document.ПереміщенняНоменклатури.Command.PrintДрукувати</name>
+		<right>
+			<name>View</name>
 			<value>true</value>
 		</right>
 	</object>

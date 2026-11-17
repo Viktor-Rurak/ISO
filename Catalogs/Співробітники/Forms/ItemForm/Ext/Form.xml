@@ -13,6 +13,12 @@
 		<InputField name="Description" id="4">
 			<DataPath>Object.Description</DataPath>
 			<ReadOnly>true</ReadOnly>
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>ПІБ</v8:content>
+				</v8:item>
+			</Title>
 			<EditMode>EnterOnInput</EditMode>
 			<ContextMenu name="DescriptionContextMenu" id="5"/>
 			<ExtendedTooltip name="DescriptionExtendedTooltip" id="6"/>
