@@ -57,7 +57,7 @@
 
 ## Робочий процес Claude (як вносити зміни)
 
-Тепер Claude працює прямо на ПК (Claude Code). База: файлова `D:\BafDataBase`, BAF: `C:\Program Files\BAF\8.3.15.1887incv8.exe`. Коли BAF закритий, усе робиться пакетно:
+Тепер Claude працює прямо на ПК (Claude Code). База: файлова `D:\BafDataBase`, BAF: `C:\Program Files\BAF\8.3.15.1887\bin\1cv8.exe`. Коли BAF закритий, усе робиться пакетно:
 `1cv8.exe DESIGNER /F"D:\BafDataBase" /N"Адміністратор" /LoadConfigFromFiles D:\FirmaRurak-src /UpdateDBCfg /Out log`, далі `/CheckModules -ThinClient -Server`, `/DumpConfigToFiles <tmp>` (звірка), `/DumpIB <file>.dt`. Пуш працює напряму.
 
 Старий ручний процес:
