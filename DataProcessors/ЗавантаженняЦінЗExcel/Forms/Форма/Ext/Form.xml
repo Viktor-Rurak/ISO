@@ -1,0 +1,241 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
+	<AutoCommandBar name="FormCommandBar" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">OnCreateAtServer</Event>
+	</Events>
+	<ChildItems>
+		<LabelDecoration name="Підказка" id="1">
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Файл Excel: колонка A - найменування номенклатури (як у довіднику), колонка B - ціна. Рядки без числової ціни (заголовок) пропускаються.</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="ПідказкаContextMenu" id="2"/>
+			<ExtendedTooltip name="ПідказкаExtendedTooltip" id="3"/>
+		</LabelDecoration>
+		<InputField name="ШляхДоФайлу" id="4">
+			<DataPath>ШляхДоФайлу</DataPath>
+			<ChoiceButton>true</ChoiceButton>
+			<ContextMenu name="ШляхДоФайлуContextMenu" id="5"/>
+			<ExtendedTooltip name="ШляхДоФайлуExtendedTooltip" id="6"/>
+			<Events>
+				<Event name="StartChoice">ШляхДоФайлуStartChoice</Event>
+			</Events>
+		</InputField>
+		<InputField name="ТипЦіни" id="7">
+			<DataPath>ТипЦіни</DataPath>
+			<ContextMenu name="ТипЦіниContextMenu" id="8"/>
+			<ExtendedTooltip name="ТипЦіниExtendedTooltip" id="9"/>
+		</InputField>
+		<InputField name="ДатаЦін" id="10">
+			<DataPath>ДатаЦін</DataPath>
+			<ContextMenu name="ДатаЦінContextMenu" id="11"/>
+			<ExtendedTooltip name="ДатаЦінExtendedTooltip" id="12"/>
+		</InputField>
+		<UsualGroup name="Кнопки" id="13">
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="КнопкиExtendedTooltip" id="14"/>
+			<ChildItems>
+				<Button name="КнопкаЗавантажити" id="15">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.Завантажити</CommandName>
+					<ExtendedTooltip name="КнопкаЗавантажитиExtendedTooltip" id="16"/>
+				</Button>
+				<Button name="КнопкаЗаписатиЦіни" id="17">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.ЗаписатиЦіни</CommandName>
+					<ExtendedTooltip name="КнопкаЗаписатиЦіниExtendedTooltip" id="18"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="Ціни" id="19">
+			<Representation>List</Representation>
+			<DataPath>Ціни</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ЦіниContextMenu" id="20"/>
+			<AutoCommandBar name="ЦіниCommandBar" id="21"/>
+			<ExtendedTooltip name="ЦіниExtendedTooltip" id="22"/>
+			<SearchStringAddition name="ЦіниSearchString" id="35">
+				<AdditionSource>
+					<Item>Ціни</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ЦіниSearchStringContextMenu" id="36"/>
+				<ExtendedTooltip name="ЦіниSearchStringExtendedTooltip" id="37"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ЦіниViewStatus" id="38">
+				<AdditionSource>
+					<Item>Ціни</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ЦіниViewStatusContextMenu" id="39"/>
+				<ExtendedTooltip name="ЦіниViewStatusExtendedTooltip" id="40"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ЦіниSearchControl" id="41">
+				<AdditionSource>
+					<Item>Ціни</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ЦіниSearchControlContextMenu" id="42"/>
+				<ExtendedTooltip name="ЦіниSearchControlExtendedTooltip" id="43"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<InputField name="ЦіниНазваУФайлі" id="26">
+					<DataPath>Ціни.НазваУФайлі</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<ContextMenu name="ЦіниНазваУФайліContextMenu" id="27"/>
+					<ExtendedTooltip name="ЦіниНазваУФайліExtendedTooltip" id="28"/>
+				</InputField>
+				<InputField name="ЦіниНоменклатура" id="29">
+					<DataPath>Ціни.Номенклатура</DataPath>
+					<ContextMenu name="ЦіниНоменклатураContextMenu" id="30"/>
+					<ExtendedTooltip name="ЦіниНоменклатураExtendedTooltip" id="31"/>
+				</InputField>
+				<InputField name="ЦіниЦіна" id="32">
+					<DataPath>Ціни.Ціна</DataPath>
+					<ContextMenu name="ЦіниЦінаContextMenu" id="33"/>
+					<ExtendedTooltip name="ЦіниЦінаExtendedTooltip" id="34"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Object" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ЗавантаженняЦінЗExcel</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ШляхДоФайлу" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Файл Excel</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ТипЦіни" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Тип ціни</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:EnumRef.ТипиЦін</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ДатаЦін" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Дата встановлення цін</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Date</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Ціни" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Ціни з файлу</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="НазваУФайлі" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Найменування у файлі</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Номенклатура" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Номенклатура</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Номенклатура</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Ціна" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Ціна</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Завантажити" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Завантажити з файлу</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Прочитати файл Excel і показати ціни</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Завантажити</Action>
+		</Command>
+		<Command name="ЗаписатиЦіни" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Записати ціни</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Створити і провести документ «Встановлення цін номенклатури»</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаписатиЦіни</Action>
+		</Command>
+	</Commands>
+</Form>

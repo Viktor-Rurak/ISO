@@ -16,14 +16,14 @@
 			<Synonym>
 				<v8:item>
 					<v8:lang>en</v8:lang>
-					<v8:content>НоменклатураНаСкладі</v8:content>
+					<v8:content>Номенклатура на складі</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>
 			<UseStandardCommands>true</UseStandardCommands>
 			<DefaultForm/>
 			<AuxiliaryForm/>
-			<MainDataCompositionSchema/>
+			<MainDataCompositionSchema>Report.НоменклатураНаСкладі.Template.ОсновнаСхемаКомпонуванняДаних</MainDataCompositionSchema>
 			<DefaultSettingsForm/>
 			<AuxiliarySettingsForm/>
 			<DefaultVariantForm/>
@@ -33,6 +33,8 @@
 			<ExtendedPresentation/>
 			<Explanation/>
 		</Properties>
-		<ChildObjects/>
+		<ChildObjects>
+			<Template>ОсновнаСхемаКомпонуванняДаних</Template>
+		</ChildObjects>
 	</Report>
 </MetaDataObject>
