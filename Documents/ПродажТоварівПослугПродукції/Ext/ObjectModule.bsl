@@ -4,6 +4,12 @@ EndProcedure
 
 Procedure Posting(Cancel, Mode)
 	// товари списуються зі складу, продаж фіксується в розрізі контрагента
+	// контроль: на складі не може залишитися від'ємна кількість
+	AtServer.CheckStockBalance(Склад, ТаблицяНоменклатури, New Boundary(PointInTime(), BoundaryType.Excluding), Cancel);
+	If Cancel Then
+		Return;
+	EndIf;
+
 	RegisterRecords.ЗалишкиНоменклатури.Write = True;
 	RegisterRecords.ПродажіКомпанії.Write = True;
 	For Each CurRow In ТаблицяНоменклатури Do

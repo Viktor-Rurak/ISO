@@ -6,6 +6,7 @@
 	<AutoCommandBar name="FormCommandBar" id="-1"/>
 	<Events>
 		<Event name="OnOpen">OnOpen</Event>
+		<Event name="BeforeWrite">BeforeWrite</Event>
 		<Event name="OnCreateAtServer">OnCreateAtServer</Event>
 	</Events>
 	<ChildItems>
@@ -49,22 +50,29 @@
 			<ContextMenu name="КомірникContextMenu" id="14"/>
 			<ExtendedTooltip name="КомірникExtendedTooltip" id="15"/>
 		</InputField>
-		<InputField name="Сума" id="16">
-			<DataPath>Object.Сума</DataPath>
-			<ReadOnly>true</ReadOnly>
-			<EditMode>EnterOnInput</EditMode>
-			<ContextMenu name="СумаContextMenu" id="17"/>
-			<ExtendedTooltip name="СумаExtendedTooltip" id="18"/>
-		</InputField>
 		<Table name="ТаблицяНоменклатури" id="19">
 			<Representation>List</Representation>
+			<Footer>true</Footer>
 			<AutoInsertNewRow>true</AutoInsertNewRow>
 			<EnableStartDrag>true</EnableStartDrag>
 			<EnableDrag>true</EnableDrag>
 			<DataPath>Object.ТаблицяНоменклатури</DataPath>
 			<RowFilter xsi:nil="true"/>
 			<ContextMenu name="ТаблицяНоменклатуриContextMenu" id="20"/>
-			<AutoCommandBar name="ТаблицяНоменклатуриCommandBar" id="21"/>
+			<AutoCommandBar name="ТаблицяНоменклатуриCommandBar" id="21">
+				<ChildItems>
+					<Button name="ТаблицяНоменклатуриПідбір" id="153">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.Підбір</CommandName>
+						<ExtendedTooltip name="ТаблицяНоменклатуриПідбірExtendedTooltip" id="154"/>
+					</Button>
+					<Button name="ТаблицяНоменклатуриОчистити" id="155">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.Очистити</CommandName>
+						<ExtendedTooltip name="ТаблицяНоменклатуриОчиститиExtendedTooltip" id="156"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
 			<ExtendedTooltip name="ТаблицяНоменклатуриExtendedTooltip" id="22"/>
 			<SearchStringAddition name="ТаблицяНоменклатуриSearchString" id="23">
 				<AdditionSource>
@@ -90,6 +98,10 @@
 				<ContextMenu name="ТаблицяНоменклатуриSearchControlContextMenu" id="30"/>
 				<ExtendedTooltip name="ТаблицяНоменклатуриSearchControlExtendedTooltip" id="31"/>
 			</SearchControlAddition>
+			<Events>
+				<Event name="OnEditEnd">ТаблицяНоменклатуриOnEditEnd</Event>
+				<Event name="ChoiceProcessing">ТаблицяНоменклатуриChoiceProcessing</Event>
+			</Events>
 			<ChildItems>
 				<LabelField name="ТаблицяНоменклатуриLineNumber" id="32">
 					<DataPath>Object.ТаблицяНоменклатури.LineNumber</DataPath>
@@ -102,6 +114,9 @@
 					<EditMode>EnterOnInput</EditMode>
 					<ContextMenu name="ТаблицяНоменклатуриНоменклатураContextMenu" id="36"/>
 					<ExtendedTooltip name="ТаблицяНоменклатуриНоменклатураExtendedTooltip" id="37"/>
+					<Events>
+						<Event name="OnChange">НоменклатураOnChange</Event>
+					</Events>
 				</InputField>
 				<InputField name="ТаблицяНоменклатуриОдиницяВиміру" id="38">
 					<DataPath>Object.ТаблицяНоменклатури.ОдиницяВиміру</DataPath>
@@ -115,7 +130,7 @@
 					<ContextMenu name="ТаблицяНоменклатуриКількістьContextMenu" id="42"/>
 					<ExtendedTooltip name="ТаблицяНоменклатуриКількістьExtendedTooltip" id="43"/>
 					<Events>
-						<Event name="OnChange">РядокКількістьOnChange</Event>
+						<Event name="OnChange">КількістьЦінаOnChange</Event>
 					</Events>
 				</InputField>
 				<InputField name="ТаблицяНоменклатуриЦіна" id="44">
@@ -124,12 +139,13 @@
 					<ContextMenu name="ТаблицяНоменклатуриЦінаContextMenu" id="45"/>
 					<ExtendedTooltip name="ТаблицяНоменклатуриЦінаExtendedTooltip" id="46"/>
 					<Events>
-						<Event name="OnChange">РядокЦінаOnChange</Event>
+						<Event name="OnChange">КількістьЦінаOnChange</Event>
 					</Events>
 				</InputField>
 				<InputField name="ТаблицяНоменклатуриСума" id="47">
 					<DataPath>Object.ТаблицяНоменклатури.Сума</DataPath>
 					<EditMode>EnterOnInput</EditMode>
+					<FooterDataPath>Object.ТаблицяНоменклатури.TotalСума</FooterDataPath>
 					<ContextMenu name="ТаблицяНоменклатуриСумаContextMenu" id="48"/>
 					<ExtendedTooltip name="ТаблицяНоменклатуриСумаExtendedTooltip" id="49"/>
 				</InputField>
@@ -148,4 +164,36 @@
 			</UseAlways>
 		</Attribute>
 	</Attributes>
+	<Commands>
+		<Command name="Підбір" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Підбір</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Підбір номенклатури з довідника</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Підбір</Action>
+		</Command>
+		<Command name="Очистити" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Очистити</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Очистити табличну частину</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Очистити</Action>
+		</Command>
+	</Commands>
 </Form>

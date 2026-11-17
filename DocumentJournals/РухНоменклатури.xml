@@ -37,6 +37,59 @@
 			<ExtendedListPresentation/>
 			<Explanation/>
 		</Properties>
-		<ChildObjects/>
+		<ChildObjects>
+			<Column uuid="e616aad9-2d6d-4772-93c6-4c5f9ce3ebc7">
+				<Properties>
+					<Name>Контрагент</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Контрагент</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Indexing>DontIndex</Indexing>
+					<References>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.НадходженняТоварівПослуг.Attribute.Контрагент</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ПродажТоварівПослугПродукції.Attribute.Контрагент</xr:Item>
+					</References>
+				</Properties>
+			</Column>
+			<Column uuid="0c114fe7-c052-4ed5-a4ce-ac3261cc1943">
+				<Properties>
+					<Name>Склад</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Склад</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Indexing>DontIndex</Indexing>
+					<References>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.НадходженняТоварівПослуг.Attribute.Склад</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ПродажТоварівПослугПродукції.Attribute.Склад</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ПереміщенняНоменклатури.Attribute.СкладВідправник</xr:Item>
+					</References>
+				</Properties>
+			</Column>
+			<Column uuid="be4b429c-3231-4972-9c39-ab26dd6ab4a2">
+				<Properties>
+					<Name>Сума</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Сума</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Indexing>DontIndex</Indexing>
+					<References>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.НадходженняТоварівПослуг.Attribute.Сума</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ПродажТоварівПослугПродукції.Attribute.Сума</xr:Item>
+					</References>
+				</Properties>
+			</Column>
+		</ChildObjects>
 	</DocumentJournal>
 </MetaDataObject>

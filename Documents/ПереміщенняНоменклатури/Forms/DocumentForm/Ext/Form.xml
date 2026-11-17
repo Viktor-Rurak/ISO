@@ -6,6 +6,7 @@
 	<AutoCommandBar name="FormCommandBar" id="-1"/>
 	<Events>
 		<Event name="OnOpen">OnOpen</Event>
+		<Event name="BeforeWrite">BeforeWrite</Event>
 		<Event name="OnCreateAtServer">OnCreateAtServer</Event>
 	</Events>
 	<ChildItems>
@@ -51,13 +52,27 @@
 		</InputField>
 		<Table name="ТаблицяНоменклатури" id="19">
 			<Representation>List</Representation>
+			<Footer>true</Footer>
 			<AutoInsertNewRow>true</AutoInsertNewRow>
 			<EnableStartDrag>true</EnableStartDrag>
 			<EnableDrag>true</EnableDrag>
 			<DataPath>Object.ТаблицяНоменклатури</DataPath>
 			<RowFilter xsi:nil="true"/>
 			<ContextMenu name="ТаблицяНоменклатуриContextMenu" id="20"/>
-			<AutoCommandBar name="ТаблицяНоменклатуриCommandBar" id="21"/>
+			<AutoCommandBar name="ТаблицяНоменклатуриCommandBar" id="21">
+				<ChildItems>
+					<Button name="ТаблицяНоменклатуриПідбір" id="141">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.Підбір</CommandName>
+						<ExtendedTooltip name="ТаблицяНоменклатуриПідбірExtendedTooltip" id="142"/>
+					</Button>
+					<Button name="ТаблицяНоменклатуриОчистити" id="143">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.Очистити</CommandName>
+						<ExtendedTooltip name="ТаблицяНоменклатуриОчиститиExtendedTooltip" id="144"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
 			<ExtendedTooltip name="ТаблицяНоменклатуриExtendedTooltip" id="22"/>
 			<SearchStringAddition name="ТаблицяНоменклатуриSearchString" id="23">
 				<AdditionSource>
@@ -83,6 +98,10 @@
 				<ContextMenu name="ТаблицяНоменклатуриSearchControlContextMenu" id="30"/>
 				<ExtendedTooltip name="ТаблицяНоменклатуриSearchControlExtendedTooltip" id="31"/>
 			</SearchControlAddition>
+			<Events>
+				<Event name="OnEditEnd">ТаблицяНоменклатуриOnEditEnd</Event>
+				<Event name="ChoiceProcessing">ТаблицяНоменклатуриChoiceProcessing</Event>
+			</Events>
 			<ChildItems>
 				<LabelField name="ТаблицяНоменклатуриLineNumber" id="32">
 					<DataPath>Object.ТаблицяНоменклатури.LineNumber</DataPath>
@@ -95,12 +114,18 @@
 					<EditMode>EnterOnInput</EditMode>
 					<ContextMenu name="ТаблицяНоменклатуриНоменклатураContextMenu" id="36"/>
 					<ExtendedTooltip name="ТаблицяНоменклатуриНоменклатураExtendedTooltip" id="37"/>
+					<Events>
+						<Event name="OnChange">НоменклатураOnChange</Event>
+					</Events>
 				</InputField>
 				<InputField name="ТаблицяНоменклатуриКількість" id="38">
 					<DataPath>Object.ТаблицяНоменклатури.Кількість</DataPath>
 					<EditMode>EnterOnInput</EditMode>
 					<ContextMenu name="ТаблицяНоменклатуриКількістьContextMenu" id="39"/>
 					<ExtendedTooltip name="ТаблицяНоменклатуриКількістьExtendedTooltip" id="40"/>
+					<Events>
+						<Event name="OnChange">КількістьOnChange</Event>
+					</Events>
 				</InputField>
 			</ChildItems>
 		</Table>
@@ -117,4 +142,36 @@
 			</UseAlways>
 		</Attribute>
 	</Attributes>
+	<Commands>
+		<Command name="Підбір" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Підбір</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Підбір номенклатури з довідника</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Підбір</Action>
+		</Command>
+		<Command name="Очистити" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Очистити</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Очистити табличну частину</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Очистити</Action>
+		</Command>
+	</Commands>
 </Form>

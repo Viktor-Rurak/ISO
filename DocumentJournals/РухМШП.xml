@@ -28,7 +28,7 @@
 			<AuxiliaryForm/>
 			<UseStandardCommands>true</UseStandardCommands>
 			<RegisteredDocuments>
-				<xr:Item xsi:type="xr:MDObjectRef">Document.НадходженняТоварівПослуг</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.НадходженняМШП</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.ПередачаМШПВЕксплуатацію</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.СписанняМШП</xr:Item>
 			</RegisteredDocuments>
@@ -37,6 +37,58 @@
 			<ExtendedListPresentation/>
 			<Explanation/>
 		</Properties>
-		<ChildObjects/>
+		<ChildObjects>
+			<Column uuid="92fd03d4-6cf4-42ca-991a-a22ecb3df0c9">
+				<Properties>
+					<Name>Контрагент</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Контрагент</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Indexing>DontIndex</Indexing>
+					<References>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.НадходженняМШП.Attribute.Контрагент</xr:Item>
+					</References>
+				</Properties>
+			</Column>
+			<Column uuid="44eb89e3-f9fc-4628-9fa8-e809809b71b5">
+				<Properties>
+					<Name>Підрозділ</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Підрозділ</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Indexing>DontIndex</Indexing>
+					<References>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ПередачаМШПВЕксплуатацію.Attribute.Підрозділ</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.СписанняМШП.Attribute.Підрозділ</xr:Item>
+					</References>
+				</Properties>
+			</Column>
+			<Column uuid="eeba5c69-29b3-4abc-bb8d-62295cffa549">
+				<Properties>
+					<Name>Сума</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Сума</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Indexing>DontIndex</Indexing>
+					<References>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.НадходженняМШП.Attribute.Сума</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ПередачаМШПВЕксплуатацію.Attribute.Сума</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.СписанняМШП.Attribute.Сума</xr:Item>
+					</References>
+				</Properties>
+			</Column>
+		</ChildObjects>
 	</DocumentJournal>
 </MetaDataObject>

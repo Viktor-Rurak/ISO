@@ -6,6 +6,7 @@
 	<AutoCommandBar name="FormCommandBar" id="-1"/>
 	<Events>
 		<Event name="OnOpen">OnOpen</Event>
+		<Event name="BeforeWrite">BeforeWrite</Event>
 		<Event name="OnCreateAtServer">OnCreateAtServer</Event>
 	</Events>
 	<ChildItems>
@@ -51,13 +52,27 @@
 		</InputField>
 		<Table name="МШП" id="16">
 			<Representation>List</Representation>
+			<Footer>true</Footer>
 			<AutoInsertNewRow>true</AutoInsertNewRow>
 			<EnableStartDrag>true</EnableStartDrag>
 			<EnableDrag>true</EnableDrag>
 			<DataPath>Object.МШП</DataPath>
 			<RowFilter xsi:nil="true"/>
 			<ContextMenu name="МШПContextMenu" id="17"/>
-			<AutoCommandBar name="МШПCommandBar" id="18"/>
+			<AutoCommandBar name="МШПCommandBar" id="18">
+				<ChildItems>
+					<Button name="МШППідбір" id="147">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.Підбір</CommandName>
+						<ExtendedTooltip name="МШППідбірExtendedTooltip" id="148"/>
+					</Button>
+					<Button name="МШПОчистити" id="149">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.Очистити</CommandName>
+						<ExtendedTooltip name="МШПОчиститиExtendedTooltip" id="150"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
 			<ExtendedTooltip name="МШПExtendedTooltip" id="19"/>
 			<SearchStringAddition name="МШПSearchString" id="20">
 				<AdditionSource>
@@ -83,6 +98,10 @@
 				<ContextMenu name="МШПSearchControlContextMenu" id="27"/>
 				<ExtendedTooltip name="МШПSearchControlExtendedTooltip" id="28"/>
 			</SearchControlAddition>
+			<Events>
+				<Event name="OnEditEnd">МШПOnEditEnd</Event>
+				<Event name="ChoiceProcessing">МШПChoiceProcessing</Event>
+			</Events>
 			<ChildItems>
 				<LabelField name="МШПLineNumber" id="29">
 					<DataPath>Object.МШП.LineNumber</DataPath>
@@ -95,6 +114,9 @@
 					<EditMode>EnterOnInput</EditMode>
 					<ContextMenu name="МШПНоменклатураContextMenu" id="33"/>
 					<ExtendedTooltip name="МШПНоменклатураExtendedTooltip" id="34"/>
+					<Events>
+						<Event name="OnChange">НоменклатураOnChange</Event>
+					</Events>
 				</InputField>
 				<InputField name="МШПКількість" id="35">
 					<DataPath>Object.МШП.Кількість</DataPath>
@@ -102,7 +124,7 @@
 					<ContextMenu name="МШПКількістьContextMenu" id="36"/>
 					<ExtendedTooltip name="МШПКількістьExtendedTooltip" id="37"/>
 					<Events>
-						<Event name="OnChange">МШПКількістьOnChange</Event>
+						<Event name="OnChange">КількістьЦінаOnChange</Event>
 					</Events>
 				</InputField>
 				<InputField name="МШПЦіна" id="38">
@@ -111,12 +133,13 @@
 					<ContextMenu name="МШПЦінаContextMenu" id="39"/>
 					<ExtendedTooltip name="МШПЦінаExtendedTooltip" id="40"/>
 					<Events>
-						<Event name="OnChange">МШПЦінаOnChange</Event>
+						<Event name="OnChange">КількістьЦінаOnChange</Event>
 					</Events>
 				</InputField>
 				<InputField name="МШПСума" id="41">
 					<DataPath>Object.МШП.Сума</DataPath>
 					<EditMode>EnterOnInput</EditMode>
+					<FooterDataPath>Object.МШП.TotalСума</FooterDataPath>
 					<ContextMenu name="МШПСумаContextMenu" id="42"/>
 					<ExtendedTooltip name="МШПСумаExtendedTooltip" id="43"/>
 				</InputField>
@@ -135,4 +158,36 @@
 			</UseAlways>
 		</Attribute>
 	</Attributes>
+	<Commands>
+		<Command name="Підбір" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Підбір</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Підбір номенклатури з довідника</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Підбір</Action>
+		</Command>
+		<Command name="Очистити" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Очистити</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Очистити табличну частину</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Очистити</Action>
+		</Command>
+	</Commands>
 </Form>
