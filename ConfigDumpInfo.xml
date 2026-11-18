@@ -126,7 +126,7 @@
 		<Metadata name="DataProcessor.ЗавантаженняЦінЗExcel" id="f0cd6bf3-f9ad-4add-8d7a-ceabb22760ad" configVersion="8b7467fac3efa34b8ea20cbb667d6ba400000000"/>
 		<Metadata name="DataProcessor.ЗавантаженняЦінЗExcel.Form.Форма" id="a9e89bd5-cfaf-451c-b642-b3b6b2603294" configVersion="5e429ccfdebd504582e6d0156e4424bc00000000"/>
 		<Metadata name="DataProcessor.ЗавантаженняЦінЗExcel.Form.Форма.Form" id="a9e89bd5-cfaf-451c-b642-b3b6b2603294.0" configVersion="06168f06b3d0d04dbaefcf81f97ff0c000000000"/>
-		<Metadata name="Document.ВстановленняЦінНоменклатури" id="02639b3e-f2a4-4832-8ef9-bee9960212cd" configVersion="c368a78e5419b94e9aaffe78843a848900000000">
+		<Metadata name="Document.ВстановленняЦінНоменклатури" id="02639b3e-f2a4-4832-8ef9-bee9960212cd" configVersion="3f6b650666f75541af3769825787251800000000">
 			<Metadata name="Document.ВстановленняЦінНоменклатури.TabularSection.Номенклатура.Attribute.НоменклатураНазва" id="2346a3b9-8bb5-4ee4-af09-6e1b353507e2"/>
 			<Metadata name="Document.ВстановленняЦінНоменклатури.TabularSection.Номенклатура.Attribute.ТипЦіни" id="891d672c-5491-4834-bfc5-4a29139e2d8e"/>
 			<Metadata name="Document.ВстановленняЦінНоменклатури.Attribute.ВибірВидНоменклатури" id="a233f459-61ec-410a-92ad-46384f0165f4"/>
@@ -141,7 +141,7 @@
 		<Metadata name="Document.ВстановленняЦінНоменклатури.Form.ListForm" id="e7a198d7-f2dc-40ca-9aa2-1dcbfde76754" configVersion="609d7abfaaf5e9418cf7d98f0ad545d400000000"/>
 		<Metadata name="Document.ВстановленняЦінНоменклатури.Form.ListForm.Form" id="e7a198d7-f2dc-40ca-9aa2-1dcbfde76754.0" configVersion="d2ac88e814793941b4fc125affb75ba100000000"/>
 		<Metadata name="Document.ВстановленняЦінНоменклатури.ManagerModule" id="02639b3e-f2a4-4832-8ef9-bee9960212cd.2" configVersion="d0a194cb2fcb734f9080b368ee88c73300000000"/>
-		<Metadata name="Document.ВстановленняЦінНоменклатури.ObjectModule" id="02639b3e-f2a4-4832-8ef9-bee9960212cd.0" configVersion="f9656989d17ac14397664c42ade14c4b00000000"/>
+		<Metadata name="Document.ВстановленняЦінНоменклатури.ObjectModule" id="02639b3e-f2a4-4832-8ef9-bee9960212cd.0" configVersion="38972b595117094da1df0b78ef8ad9fc00000000"/>
 		<Metadata name="Document.ВстановленняЦінНоменклатури.Template.PrintДрукувати" id="36a2b179-d87a-4429-8cbf-05e63bc538b5" configVersion="62199b7522e9774f8d37e7af8b69640c00000000"/>
 		<Metadata name="Document.ВстановленняЦінНоменклатури.Template.PrintДрукувати.Template" id="36a2b179-d87a-4429-8cbf-05e63bc538b5.0" configVersion="e49cb4b76a3a864dbdb5576469c92f0f00000000"/>
 		<Metadata name="Document.НадходженняМШП" id="19f4aba1-f1c3-46a1-9424-a73993604b6c" configVersion="839ed47b0cf1a6439ba79bef18e3825300000000">
